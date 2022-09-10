@@ -6,7 +6,7 @@ include('db.php');
     $data = json_decode($request_body, true);
 
 
-    $todo = $data['item']; 
+    $todo = $data['todo']; 
 
 $stmt = $db->prepare('INSERT INTO todo (todo) VALUES (:todo)');
 $stmt->bindValue(':todo', $todo);
