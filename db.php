@@ -1,3 +1,3 @@
 <?php
-$db = new SQLite3('todo.db');
+$db = new SQLite3(':memory:');
 ?>
